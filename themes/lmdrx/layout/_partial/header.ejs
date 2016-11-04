@@ -1,0 +1,18 @@
+<% if(config.notice) { %>
+<div class="notice">
+  <svg width="8" height="8"><circle cx="4" cy="4" r="4"/></svg>
+  <small><%= config.notice %></small>
+</div>
+<% } %>
+
+<header id="header">
+  <div class="inner">
+    <small>Hello, I'm</small>
+    <h1 class="heading">
+      <a href="<%- url_for() %>"><%= config.name %></a>
+    </h1>
+  <% if (config.presentation){ %>
+    <h2 class="subheading"><%= config.presentation %></h2>
+  <% } %>
+  </div>
+</header>

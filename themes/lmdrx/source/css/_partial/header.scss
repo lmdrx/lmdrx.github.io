@@ -1,0 +1,69 @@
+/**
+ * File: _partial/header.scss
+ * Resources:
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/position
+ */
+$header_height: 360px;
+
+#header {
+  position: relative; // Keeps the parent element within the normal flow of elements.
+  display: block; // Display as a block, breaks past it, and take as much horizontal space.
+  height: $header_height; // Set initial height, this is the initial size.
+  min-height: $header_height; // Set minimum height, reinforces element size.
+  max-height: $header_height; // Set maximum height, reinforces element size.
+
+  .inner {
+    position: absolute; // Set at specified position relative to its closest positioned ancestor.
+    display: block; // Display as a block, breaks past it, and take as much horizontal space.
+    bottom: 60px; // This will be on the bottom of the parent div
+
+    small {
+      color: $color-terciary;
+      margin: 0; // Avoid having extra spacing outside the element border.
+      padding: 0; // Avoid having extra spacing inside the element border.
+      font-size: 14px; // Legibility is non-important... when it is, use 16px as minimum;
+      font-weight: 400; // 300 is too light, 400 is just right.
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .heading {
+      color: $color-primary;
+      margin: 20px 0 10px 0;
+      padding: 0px;
+
+      height: 80px;
+      min-height: 80px;
+      max-height: 80px;
+
+      width: 170px;
+      min-width: 170px;
+      max-width: 170px;
+
+      font-family: 'Bitter', "serif";
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 1em;
+      letter-spacing: 0;
+    }
+
+    .subheading {
+      color: $color-terciary; //
+      margin: 0; //
+      padding: 0; //
+
+      height: 80px;
+      min-height: 80px;
+      max-height: 80px;
+
+      min-width: 255px;
+      max-width: 396px;
+
+      font-family: 'Source Sans Pro', "sans-serif"; //
+      font-weight: 400; //
+      font-size: 16px; //
+      line-height: 20px; //
+      letter-spacing: 0; //
+      // margin-bottom: 30px; // Space below to separate from the navigation block
+    }
+  }
+}

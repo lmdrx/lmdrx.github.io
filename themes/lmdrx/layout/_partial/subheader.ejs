@@ -1,0 +1,14 @@
+<section id="subheader">
+  <div class="inner">
+    <div class="left">
+      
+    </div>
+
+    <div class="right">
+      <% for(var item in theme.menu) { %>
+      <a class="main-nav-link"
+        href="<%- url_for(theme.menu[item]) %>"><%= item %></a>
+      <% } %>
+    </div>
+  </div>
+</section>

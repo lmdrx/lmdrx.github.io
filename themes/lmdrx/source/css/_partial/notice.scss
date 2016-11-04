@@ -1,0 +1,26 @@
+/**
+ * File: _partial/notice.scss
+ */
+
+.notice {
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+
+  svg {
+    fill: $color-tone;
+    margin: 0;
+    padding: 0;
+  }
+
+  small {
+    width: 100%;
+    color: $color-tone;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}

@@ -1,0 +1,28 @@
+// Fonts Import
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin-ext');
+
+/**
+ * Normalize font rendering across browsers
+ * Resources:
+ *  - https://bugzilla.mozilla.org/show_bug.cgi?id=857142
+ *  - https://davidwalsh.name/font-smoothing
+ *  - http://szafranek.net/works/articles/font-smoothing-explained/
+ */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  a {
+    color: inherit; // Avoid a different color on an href
+    text-decoration: none; // Avoid the underlining of an href
+  }
+}
+
+/**
+ + Font Variables
+ */
+$font-serif: 'Bitter', sans-serif;
+$font-sans-serif: 'Source Sans Pro', sans-serif;

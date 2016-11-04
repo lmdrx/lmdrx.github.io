@@ -1,0 +1,23 @@
+<ul id="posts">
+  <% page.posts.each(post => { %>
+    <li class='post'>
+      <div class="inner">
+        <small class="date"><%- date(post.date, ' MMMM Do YYYY')%></small>
+        <h3 class="post-title">
+          <a href='<%= url_for(post.path) %>'><%- post.title %></a>
+        </h3>
+        <div class="tag-list">
+          <%- list_tags({
+            style: 'tag',
+            show_count: false,
+            separator: ', ',
+            suffix: false
+          }) %>
+        </div>
+        <a href='<%= url_for(post.path) %>'>
+        <p class='excerpt'><%= truncate(post._content, { length: 175 }) %></p>
+        </a>
+      </div>
+    </li>
+  <% }) %>
+</ul>
